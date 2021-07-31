@@ -1,3 +1,29 @@
+# Substrate Node Uniswap
+
+```
+// install node template
+git clone https://github.com/paritytech/substrate-node-template.git
+mv substrate-node-template substrate-node-uniswap
+cargo build
+./target/release/node-template --dev --tmp
+
+
+//frontend
+git clone https://github.com/substrate-developer-hub/substrate-front-end-template
+yarn start
+
+
+//send extrinsic
+https://github.com/polkadot-js/tools.git
+npm install -g @polkadot/api-cli
+
+yarn run:api query.system.account 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+
+yarn run:api tx.balances.transfer 5FLSigC9HGRKVhB9FiEo4Y3koPsNmBmLJbpXg2mp1hXcS59Y 500000000000 --seed "//Alice"
+
+```
+
+
 # Substrate Node Template
 
 [![Try on playground](https://img.shields.io/badge/Playground-Node_Template-brightgreen?logo=Parity%20Substrate)](https://playground.substrate.dev/?deploy=node-template)
